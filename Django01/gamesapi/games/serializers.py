@@ -18,3 +18,4 @@ class GameSerializer(serializers.Serializer):
         instance.played = validated_data.get('played', instance.played)
         instance.save()
         return instance
+#add player class
