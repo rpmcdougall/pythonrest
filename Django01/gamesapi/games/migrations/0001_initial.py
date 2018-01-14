@@ -25,4 +25,20 @@ class Migration(migrations.Migration):
                 'ordering': ('name',),
             },
         ),
+
+        migrations.CreateModel(
+            name='Player',
+            fields=[
+                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('created', models.DateTimeField(auto_now_add=True)),
+                ('name', models.CharField(blank=False, default='Anonymoose', max_length=200)),
+                ('age', models.CharField(blank=False, default='100', max_length=200)),
+
+            ],
+            options={
+
+            },
+
+
+        ),
     ]

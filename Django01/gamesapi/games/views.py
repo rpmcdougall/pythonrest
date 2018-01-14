@@ -19,7 +19,7 @@ class JSONResponse(HttpResponse):
 def game_list(request):
     if request.method == 'GET':
         games = Game.objects.all()
-        games_serializer = GameSerializer(games, many=true)
+        games_serializer = GameSerializer(games, many=True)
         return JSONResponse(games_serializer.data)
 
     elif request.method == 'POST':
